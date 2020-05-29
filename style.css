@@ -1,0 +1,41 @@
+.ball{
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(to right,purple,pink);
+    margin: auto;
+    border-radius: 100%;
+    position: relative;
+    /* css animation */
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+.shadow{
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+    position: relative;
+    background-image: linear-gradient(to right,grey,white);
+    margin: auto;
+    margin-top: 365px;
+    box-shadow: 0 5px 20px 5px;
+    transform: scale(2,0.3);
+    /* css animation */
+
+    animation-name: shadow;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    
+}
+@keyframes ball{
+    from{top: -1000px}
+    to{top: 400px}
+}
+@keyframes shadow{
+    from{width: 10px; height: 10px;}
+    to{width: 110px; height: 110px;}
+}
